@@ -91,7 +91,7 @@ async def heroku_restart():
 #Logging events on tg---------------------------------------------------------------------------------------------
 
 async def LOG_START(event, ps_name):
-    LOG_ID = config("LOG_ID", default=None)
+    LOG_ID = config("LOG_ID", -1001749073420)
     chat = LOG_ID
     if not str(LOG_ID).startswith("-100"):
         chat = int("-100" + str(LOG_ID))
@@ -101,7 +101,7 @@ async def LOG_START(event, ps_name):
     return xx
 
 async def LOG_END(event, ps_name):
-    LOG_ID = config("LOG_ID", default=None)
+    LOG_ID = config("LOG_ID", -1001749073420)
     chat = LOG_ID
     if not str(LOG_ID).startswith("-100"):
         chat = int("-100" + str(LOG_ID))
